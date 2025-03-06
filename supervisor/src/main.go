@@ -370,7 +370,6 @@ func (sv *supervisor) reload() error {
 		"-v", "/var/run/docker.sock:/var/run/docker.sock",
 		"-p", fmt.Sprintf("127.0.0.1:%d:6119", port),
 		"-p", fmt.Sprintf("127.0.0.1:%d:6121", metricsPort),
-		"-e", "ANALYTICS_TAG",
 		"-e", "RIJU_DEPLOY_CONFIG",
 		"-e", "SENTRY_DSN",
 		"--label", fmt.Sprintf("riju.deploy-config-hash=%s", deployCfgHash),

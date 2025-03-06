@@ -8,11 +8,6 @@ variable "aws_region" {
   default = "${env("AWS_REGION")}"
 }
 
-variable "analytics_tag" {
-  type    = string
-  default = "${env("ANALYTICS_TAG")}"
-}
-
 variable "grafana_loki_hostname" {
   type    = string
   default = "${env("GRAFANA_LOKI_HOSTNAME")}"
@@ -152,7 +147,6 @@ build {
     environment_vars = [
       "ADMIN_PASSWORD=${var.admin_password}",
       "AWS_REGION=${var.aws_region}",
-      "ANALYTICS_TAG=${var.analytics_tag}",
       "GRAFANA_LOKI_HOSTNAME=${var.grafana_loki_hostname}",
       "GRAFANA_LOKI_USERNAME=${var.grafana_loki_username}",
       "GRAFANA_PROMETHEUS_HOSTNAME=${var.grafana_prometheus_hostname}",

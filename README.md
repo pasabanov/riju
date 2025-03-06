@@ -33,11 +33,7 @@ Riju does not collect your personal information.
 
 * Your code is deleted from the server as soon as you close Riju.
 * Your terminal input and output is never saved or logged anywhere.
-* Riju uses [Fathom Analytics](https://usefathom.com/) to measure
-  traffic. Fathom collects very limited data and does not sell it to
-  third parties, unlike Google Analytics.
-* Riju does not serve advertisements or share data with any third
-  party aside from Fathom Analytics.
+* Riju does not serve advertisements or share data with any third party.
 
 All of the above notwithstanding, any service that allows people to
 run code online is inherently risky. For this reason, I can't make any

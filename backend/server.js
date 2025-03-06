@@ -16,10 +16,6 @@ const port = parseInt(process.env.PORT || "") || 6119;
 const tlsPort = parseInt(process.env.TLS_PORT || "") || 6120;
 const metricsPort = parseInt(process.env.METRICS_PORT || "") || 6121;
 const useTLS = process.env.TLS ? true : false;
-const analyticsTag = (process.env.ANALYTICS_TAG || "").replace(
-  /^'(.+)'$/,
-  "$1"
-);
 
 promClient.collectDefaultMetrics();
 
@@ -39,7 +35,6 @@ app.get("/", (_, res) => {
   if (Object.keys(langs).length > 0) {
     res.render(path.resolve("frontend/pages/index"), {
       langs,
-      analyticsTag,
     });
   } else {
     res
@@ -73,7 +68,6 @@ app.get("/:lang", (req, res) => {
   }
   res.render(path.resolve("frontend/pages/app"), {
     config: langs[lang],
-    analyticsTag,
   });
 });
 app.use("/css", express.static("frontend/styles"));

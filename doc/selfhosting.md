@@ -15,7 +15,6 @@ these instructions.**
 * [Namecheap](https://www.namecheap.com/) (or any other DNS provider)
 * [CloudFlare](https://www.cloudflare.com/) (optional, for content
   delivery optimization)
-* [Fathom Analytics](https://usefathom.com/) (optional, for analytics)
 * [Grafana Cloud](https://grafana.com/products/cloud/) (optional, for
   monitoring)
 * [Sentry](https://sentry.io/) (optional, for error tracking)
@@ -261,13 +260,6 @@ riju` to see the supervisor logs.
 Enter your domain name on CloudFlare and go through the setup and DNS
 verification. Update the nameserver settings on Namecheap's side, and
 enable all the fun CloudFlare options you'd like.
-
-## Set up analytics (optional)
-
-Sign up for Fathom Analytics, enter your domain name, and get a tag
-for embedding. Set this as `ANALYTICS_TAG` in your `.env` file (use
-single quoting, as Makefile handling of quotes is a bit nonstandard),
-and build and roll out a new web AMI.
 
 ## Set up monitoring (optional)
 

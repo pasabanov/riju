@@ -56,7 +56,6 @@ sudo sed -Ei 's|^#?PermitRootLogin .*|PermitRootLogin no|' /etc/ssh/sshd_config
 sudo sed -Ei 's|^#?PasswordAuthentication .*|PasswordAuthentication no|' /etc/ssh/sshd_config
 sudo sed -Ei 's|^#?PermitEmptyPasswords .*|PermitEmptyPasswords no|' /etc/ssh/sshd_config
 sudo sed -Ei "s|\\\$AWS_REGION|${AWS_REGION}|" /etc/systemd/system/riju.service
-sudo sed -Ei "s|\\\$ANALYTICS_TAG|${ANALYTICS_TAG:-}|" /etc/systemd/system/riju.service
 sudo sed -Ei "s|\\\$S3_BUCKET|${S3_BUCKET}|" /etc/systemd/system/riju.service
 sudo sed -Ei "s|\\\$S3_CONFIG_PATH|${S3_CONFIG_PATH}|" /etc/systemd/system/riju.service
 sudo sed -Ei "s|\\\$SENTRY_DSN|${SENTRY_DSN:-}|" /etc/systemd/system/riju.service

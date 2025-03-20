@@ -7,6 +7,6 @@ contributors.
 
 # Modified work
 
-The modified work is sublicensed under the [AGPL-3.0-or-later license](licenses/AFPL-3.0-or-later).
+All new changes are licensed under, and the original work is sublicensed under, the [AGPL-3.0-or-later license](licenses/AGPL-3.0-or-later).
 
 Copyright © 2025 Petr Alexandrovich Sabanov.
